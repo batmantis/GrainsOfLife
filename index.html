@@ -9,10 +9,13 @@
   <script src="table/table.directive.js" defer></script> -->
   <link rel="stylesheet" href="libraries/bootstrap.min.css">
   <link rel="stylesheet" href="game.css">
+  <script src="libraries/timbre.js" defer></script>
+  <!-- <script>document.styleSheets[1].insertRule('td.alive' + ' {'+'background-color'+':'+
+'#'+Math.floor(Math.random()*16777215).toString(16) +'}', 0)</script> -->
 </head>
 
 <body ng-app='game'>
-  <h2>Game of Life</h2>
+  <h2>Grains of Life</h2>
   <table id="board"></table>
 
   <div id='control_panel'>
@@ -32,7 +35,7 @@
     </div>
   </footer>
 
-  <script src="game.js"></script>
+  <script src="game.js" defer></script>
 
 </body>
 </html>
