@@ -46,7 +46,7 @@ var pentatonicFrequencies = [
     7040*/
 ];
 
-var color = null
+// var color = '#'+Math.floor(Math.random()*16777215).toString(16)
 
 var synth = T("OscGen", (T("reverb", {
         room: 0.95,
@@ -126,12 +126,12 @@ var gameOfLife = {
             if (this.getAttribute('data-status') == 'dead') {
                 this.className = "alive";
                 this.setAttribute('data-status', 'alive');
-                this.setAttribute('style', 'background-color:' + color)
+                // this.setAttribute('style', 'background-color:' + color)
                 // console.log(color)
             } else {
                 this.className = "dead";
                 this.setAttribute('data-status', 'dead');
-                this.setAttribute('style', 'background-color:#FFFFFF')
+                // this.setAttribute('style', 'background-color:#FFFFFF')
             }
         };
         this.forEachCell(function (cell) {
@@ -167,7 +167,7 @@ var gameOfLife = {
     // },
 
     step: function () {
-      color = '#'+Math.floor(Math.random()*16777215).toString(16)
+      // color = '#'+Math.floor(Math.random()*16777215).toString(16)
       // console.log(this.color)
         // Here is where you want to loop through all the cells
         // on the board and determine, based on it's neighbors,
